@@ -2,7 +2,7 @@
 
 _Tracery configurations for (Dr)SLDR's Twitter and Mastodon bots_
 
-This repository contains the JSON files that define the [Tracery](http://www.tracery.io/) grammars for my bots. Twitter bots are run on [Cheap Bots, Done Quick](https://cheapbotsdonequick.com/) and some Mastodon framework - the one I wanted to use seems to have gone away.
+This repository contains the JSON files that define the [Tracery](http://www.tracery.io/) grammars for my bots. Twitter bots are run on [Cheap Bots, Done Quick](https://cheapbotsdonequick.com/) and the Mastodon bots are... not run anywhere - the framework I wanted to use seems to have gone away.
 
 ## ProofByBot
 
