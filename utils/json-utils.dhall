@@ -24,7 +24,18 @@ let encodeArrayFragment
     : GTypes.Fragment → GTypes.JSONArrayFragment
     = λ(l : GTypes.Fragment) → encodeArrayFragmentPartial (encodeFragment l)
 
+let encodeGrammarPartial
+    : GTypes.Grammar → Map.Type Text GTypes.JSONArrayFragment
+    =   λ(g : GTypes.Grammar)
+      → Map.map
+          Text
+          GTypes.Fragment
+          GTypes.JSONArrayFragment
+          encodeArrayFragment
+          g
+
 in  { encodeFragment = encodeFragment
     , encodeArrayFragmentPartial = encodeArrayFragmentPartial
     , encodeArrayFragment = encodeArrayFragment
+    , encodeGrammarPartial = encodeGrammarPartial
     }
