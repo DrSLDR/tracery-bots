@@ -21,7 +21,7 @@ let getGrammar
 
 let getJSONGrammar
     : Grammar → JSON.Type
-    = λ(g : Grammar) → JSON.object (JUtils.encodeGrammarPartial (getGrammar g))
+    = λ(g : Grammar) → JSON.object (JUtils.encodeGrammar (getGrammar g))
 
 in  { Grammar = Grammar
     , getGrammar = getGrammar

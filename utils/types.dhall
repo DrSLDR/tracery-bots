@@ -24,7 +24,7 @@ let JSONArrayFragment
 
 let JSONGrammar
     : Type
-    = Map.Type JSON.Type JSON.Type
+    = Map.Type Text JSON.Type
 
 in  { Fragment = Fragment
     , Grammar = Grammar
