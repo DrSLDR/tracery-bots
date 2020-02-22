@@ -9,4 +9,22 @@ let generateFragment
     : List GTypes.Fragment → GTypes.Fragment
     = λ(fraglist : List GTypes.Fragment) → PList.concat Text fraglist
 
-in  generateFragment
+let ignoreFunction
+    : Text → Natural → Text
+    = λ(t : Text) → λ(x : Natural) → t
+
+let weightFragment
+    : GTypes.Weighted → GTypes.Fragment
+    =   λ(e : GTypes.Weighted)
+      → PList.generate e.weight Text (ignoreFunction e.text)
+
+let weightFragments
+    : List GTypes.Weighted → GTypes.Fragment
+    =   λ(weightList : List GTypes.Weighted)
+      → generateFragment
+          (PList.map GTypes.Weighted GTypes.Fragment weightFragment weightList)
+
+in  { generateFragment = generateFragment
+    , weightFragment = weightFragment
+    , weightFragments = weightFragments
+    }

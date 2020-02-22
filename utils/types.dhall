@@ -26,9 +26,14 @@ let JSONGrammar
     : Type
     = Map.Type Text JSON.Type
 
+let Weighted
+    : Type
+    = { text : Text, weight : Natural }
+
 in  { Fragment = Fragment
     , Grammar = Grammar
     , JSONFragment = JSONFragment
     , JSONArrayFragment = JSONArrayFragment
     , JSONGrammar = JSONGrammar
+    , Weighted = Weighted
     }
