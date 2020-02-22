@@ -34,8 +34,27 @@ let encodeGrammarPartial
           encodeArrayFragment
           g
 
+let BaseEntry
+    : Type
+    = Map.Entry Text JSON.Type
+
+let EncodedEntry
+    : Type
+    = Map.Entry JSON.Type JSON.Type
+
+let encodeEntry
+    : BaseEntry → EncodedEntry
+    =   λ(e : { mapKey : Text, mapValue : JSON.Type })
+      → { mapKey = JSON.string e.mapKey, mapValue = e.mapValue }
+
+let encodeGrammar
+    : GTypes.Grammar → GTypes.JSONGrammar
+    =   λ(g : GTypes.Grammar)
+      → PList.map BaseEntry EncodedEntry encodeEntry (encodeGrammarPartial g)
+
 in  { encodeFragment = encodeFragment
     , encodeArrayFragmentPartial = encodeArrayFragmentPartial
     , encodeArrayFragment = encodeArrayFragment
     , encodeGrammarPartial = encodeGrammarPartial
+    , encodeGrammar = encodeGrammar
     }
