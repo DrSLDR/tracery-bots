@@ -6,6 +6,7 @@ let grammar
     : GTypes.Grammar
     = [ { mapKey = "origin", mapValue = ./fragments/origin.dhall }
       , { mapKey = "fullname", mapValue = ./fragments/fullname.dhall }
+      , { mapKey = "name", mapValue = ./fragments/name.dhall }
       ]
 
 in  grammar
