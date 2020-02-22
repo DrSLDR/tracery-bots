@@ -4,8 +4,8 @@ let GTypes = ../utils/types.dhall
 
 let grammar
     : GTypes.Grammar
-    = [ { mapKey = "origin", mapValue = ./grammar-fragments/origin.dhall }
-      , { mapKey = "fullname", mapValue = ./grammar-fragments/fullname.dhall }
+    = [ { mapKey = "origin", mapValue = ./fragments/origin.dhall }
+      , { mapKey = "fullname", mapValue = ./fragments/fullname.dhall }
       ]
 
 in  grammar
