@@ -2,9 +2,6 @@
 
 let origins = ./grammar-fragments/origin.dhall
 
-let grammar =
-{
-    origin = origins
-}
+let grammar = { origin = origins }
 
-in grammar
+in  grammar
