@@ -18,6 +18,10 @@ let JSONFragment
     : Type
     = List JSON.Type
 
+let JSONArrayFragment
+    : Type
+    = JSON.Type
+
 let JSONGrammar
     : Type
     = Map.Type JSON.Type JSON.Type
@@ -25,5 +29,6 @@ let JSONGrammar
 in  { Fragment = Fragment
     , Grammar = Grammar
     , JSONFragment = JSONFragment
+    , JSONArrayFragment = JSONArrayFragment
     , JSONGrammar = JSONGrammar
     }
