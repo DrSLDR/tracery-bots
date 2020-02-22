@@ -24,6 +24,6 @@ let JSONGrammar
 
 in  { Fragment = Fragment
     , Grammar = Grammar
-    , JSONFragment = JSONGrammar
+    , JSONFragment = JSONFragment
     , JSONGrammar = JSONGrammar
     }
