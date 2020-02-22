@@ -24,7 +24,12 @@ let weightFragments
       → generateFragment
           (PList.map GTypes.Weighted GTypes.Fragment weightFragment weightList)
 
+let makeWeight
+    : Natural → Text → GTypes.Weighted
+    = λ(w : Natural) → λ(t : Text) → { text = t, weight = w }
+
 in  { generateFragment = generateFragment
     , weightFragment = weightFragment
     , weightFragments = weightFragments
+    , makeWeight = makeWeight
     }
