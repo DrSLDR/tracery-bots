@@ -16,10 +16,15 @@ let encodeFragment
     : GTypes.Fragment → GTypes.JSONFragment
     = λ(l : GTypes.Fragment) → PList.map Text JSON.Type JSON.string l
 
-let encodeArrayFragment
+let encodeArrayFragmentPartial
     : GTypes.JSONFragment → GTypes.JSONArrayFragment
     = λ(jf : GTypes.JSONFragment) → JSON.array jf
 
+let encodeArrayFragment
+    : GTypes.Fragment → GTypes.JSONArrayFragment
+    = λ(l : GTypes.Fragment) → encodeArrayFragmentPartial (encodeFragment l)
+
 in  { encodeFragment = encodeFragment
+    , encodeArrayFragmentPartial = encodeArrayFragmentPartial
     , encodeArrayFragment = encodeArrayFragment
     }
