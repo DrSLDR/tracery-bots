@@ -14,6 +14,8 @@ let origins =
       , "Proof omitted, as it follows directly from #fullname#."
       , "The reader should be familiar with #fullname# [...]"
       , "This is trivially identical to #fullname#."
+      , "In our results, we empirically observe #fullname#."
+      , "In our results, we observe evidence of #fullname#."
       ]
 
 in  origins

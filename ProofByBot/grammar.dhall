@@ -6,8 +6,14 @@ let origins
     : GTypes.Fragment
     = ./grammar-fragments/origin.dhall
 
+let fullnames
+    : GTypes.Fragment
+    = ./grammar-fragments/fullname.dhall
+
 let grammar
     : GTypes.Grammar
-    = [ { mapKey = "origin", mapValue = origins } ]
+    = [ { mapKey = "origin", mapValue = origins }
+      , { mapKey = "fullname", mapValue = fullnames }
+      ]
 
 in  grammar
