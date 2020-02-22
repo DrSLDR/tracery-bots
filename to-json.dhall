@@ -6,6 +6,8 @@ let JSON =
 
 let GTypes = ./utils/types.dhall
 
+let JUtils = ./utils/json-utils.dhall
+
 let proofbybot = ./ProofByBot/grammar.dhall
 
 let Grammar
@@ -17,4 +19,11 @@ let getGrammar
     =   λ(x : Grammar)
       → merge { ProofByBot = proofbybot, nil = [] : GTypes.Grammar } x
 
-in  { Grammar = Grammar, getGrammar = getGrammar }
+let getJSONGrammar
+    : Grammar → JSON.Type
+    = λ(g : Grammar) → JSON.object (JUtils.encodeGrammarPartial (getGrammar g))
+
+in  { Grammar = Grammar
+    , getGrammar = getGrammar
+    , getJSONGrammar = getJSONGrammar
+    }
