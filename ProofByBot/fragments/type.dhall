@@ -1,5 +1,5 @@
 let set =
-      [ "Abberation"
+      [ "Aberration"
       , "Algorithm"
       , "Anti-Proof"
       , "Argument"
