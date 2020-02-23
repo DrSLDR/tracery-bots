@@ -11,9 +11,12 @@ let grammar
       , { mapKey = "cardinalnameset"
         , mapValue = ./fragments/cardinalnameset.dhall
         }
+      , { mapKey = "dismissal", mapValue = ./fragments/dismissal.dhall }
+      , { mapKey = "expletive", mapValue = ./fragments/expletive.dhall }
       , { mapKey = "fullname", mapValue = ./fragments/fullname.dhall }
       , { mapKey = "name", mapValue = ./fragments/name.dhall }
       , { mapKey = "nameset", mapValue = ./fragments/nameset.dhall }
+      , { mapKey = "reply", mapValue = ./fragments/reply.dhall }
       , { mapKey = "type", mapValue = ./fragments/type.dhall }
       , { mapKey = "origin", mapValue = ./fragments/origin.dhall }
       , { mapKey = "qualifier", mapValue = ./fragments/qualifier.dhall }
