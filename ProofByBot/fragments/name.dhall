@@ -1,7 +1,7 @@
 -- Linting tip: Regex for "\w+\s
 -- Finds the spaces in names
 
-let name =
+let set =
       [ "Adams"
       , "Agassiz"
       , "Agnesi"
@@ -509,4 +509,4 @@ let name =
       , "Zewail"
       ]
 
-in  name
+in  set

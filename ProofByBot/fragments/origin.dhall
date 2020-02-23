@@ -1,4 +1,4 @@
-let origins =
+let set =
       [ "\\[...\\] #fullname# shows \\[...\\]"
       , "\\[...\\] abusing #fullname#, we can show \\[...\\]"
       , "\\[...\\] as a consequence of #fullname#, it follows \\[...\\]"
@@ -18,4 +18,4 @@ let origins =
       , "In our results, we observe evidence of #fullname#."
       ]
 
-in  origins
+in  set
