@@ -10,14 +10,21 @@ let JUtils = ./utils/json-utils.dhall
 
 let proofbybot = ./ProofByBot/grammar.dhall
 
+let autotarot = ./AutoTarot/grammar.dhall
+
 let Grammar
     : Type
-    = < ProofByBot | nil >
+    = < ProofByBot | AutoTarot | nil >
 
 let getGrammar
     : Grammar → GTypes.Grammar
     =   λ(x : Grammar)
-      → merge { ProofByBot = proofbybot, nil = [] : GTypes.Grammar } x
+      → merge
+          { ProofByBot = proofbybot
+          , AutoTarot = autotarot
+          , nil = [] : GTypes.Grammar
+          }
+          x
 
 let getJSONGrammar
     : Grammar → JSON.Type
