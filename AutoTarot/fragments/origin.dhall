@@ -1,1 +1,1 @@
-let set = [ "The #card#" ] in set
+let set = [ "#card#" ] in set
