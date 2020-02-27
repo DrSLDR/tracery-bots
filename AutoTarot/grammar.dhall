@@ -11,6 +11,11 @@ let grammar
       , { mapKey = "majordefinite", mapValue = ./fragments/majordefinite.dhall }
       , { mapKey = "minorcard", mapValue = ./fragments/minorcard.dhall }
       , { mapKey = "origin", mapValue = ./fragments/origin.dhall }
+      , { mapKey = "roman", mapValue = ./fragments/roman.dhall }
+      , { mapKey = "romanunit", mapValue = ./fragments/romanunit.dhall }
+      , { mapKey = "romanten", mapValue = ./fragments/romanten.dhall }
+      , { mapKey = "romanhundred", mapValue = ./fragments/romanhundred.dhall }
+      , { mapKey = "romanthousand", mapValue = ./fragments/romanthousand.dhall }
       , { mapKey = "suite", mapValue = ./fragments/suite.dhall }
       ]
 
