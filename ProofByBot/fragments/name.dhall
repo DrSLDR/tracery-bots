@@ -1,6 +1,10 @@
 -- Linting tip: Regex for "\w+\s
 -- Finds the spaces in names
 
+-- Another tip, to harvest names from Wikipedia
+-- Use search: \s+(\w+'?\w+).*
+-- and replace: , "$1"\n
+
 let set =
       [ "Aaron"
       , "Aarons"
