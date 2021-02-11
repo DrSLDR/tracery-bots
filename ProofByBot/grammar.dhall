@@ -11,6 +11,7 @@ let grammar
       , { mapKey = "cardinalnameset"
         , mapValue = ./fragments/cardinalnameset.dhall
         }
+      , { mapKey = "conclusion", mapValue = ./fragments/conclusion.dhall }
       , { mapKey = "dismissal", mapValue = ./fragments/dismissal.dhall }
       , { mapKey = "expletive", mapValue = ./fragments/expletive.dhall }
       , { mapKey = "fullname", mapValue = ./fragments/fullname.dhall }
