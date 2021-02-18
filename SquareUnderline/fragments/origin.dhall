@@ -1,1 +1,1 @@
-let set = [ "foo" ] in set
+let set = [ "#headword##adjectivelike# #nounlike#" ] in set
