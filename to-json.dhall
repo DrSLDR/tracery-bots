@@ -12,9 +12,11 @@ let proofbybot = ./ProofByBot/grammar.dhall
 
 let autotarot = ./AutoTarot/grammar.dhall
 
+let squareul = ./SquareUnderline/grammar.dhall
+
 let Grammar
     : Type
-    = < ProofByBot | AutoTarot | nil >
+    = < ProofByBot | AutoTarot | SquareUnderline | nil >
 
 let getGrammar
     : Grammar → GTypes.Grammar
@@ -22,6 +24,7 @@ let getGrammar
       → merge
           { ProofByBot = proofbybot
           , AutoTarot = autotarot
+          , SquareUnderline = squareul
           , nil = [] : GTypes.Grammar
           }
           x

@@ -27,6 +27,17 @@ Not yet on any network. Still figuring this one out.
 Need your fortune told? Need some life advice? AutoTarot can help, by drawing
 cards that are almost certainly _not_ in any ordinary tarot deck.
 
+## Square Underline
+
+[@SquareUnderline](https://twitter.com/SquareUnderline) on Twitter, not yet on
+Mastodon.
+
+Square Enix makes some pretty word-salady names for their games, don't they?
+This bot pokes fun at that, jamming two (or three) seemingly unrelated words in
+the english language together.
+
+Square, don't sue me please.
+
 # Usage
 
 Generating the grammars is done using Dhall. To generate the PBB grammar, do:
