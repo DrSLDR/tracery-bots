@@ -22,7 +22,7 @@ let set =
       , "Completeness follows from #fullname#."
       , "In our results, we empirically observe #fullname#."
       , "In our results, we observe evidence of #fullname#."
-      , "In this work, we extend #fullname# \\[...\\]]"
+      , "In this work, we extend #fullname# \\[...\\]"
       , "Proof omitted, as it follows directly from #fullname#."
       , "Soundness follows from #fullname#."
       , "The reader should be familiar with #fullname# \\[...\\]"
