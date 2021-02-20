@@ -55,5 +55,17 @@ files as you wish, or suggest additions to me. I'd ask you to not use these
 files as they are, creating identical bots, but hey, I can't stop you
 ¯\\\_(ツ)\_/¯
 
+# Branching
+
+As of
+[d0063fa](https://github.com/DrSLDR/tracery-bots/commit/d0063fa10ac7039a45d2e48b9311701d944c3085)
+there are two separate branches:
+
+- `master` is the current state of the running bots.
+- `dev` is the development head. This structure is intended to allow me to batch
+  updates in a more meaningful way, as well as keep internal tabs on what is and
+  isn't deployed. This branch is _not_ stable and can be rebased at any time, at
+  my discretion.
+
 # Is it any good?
 [yes.](https://news.ycombinator.com/item?id=3067434)
