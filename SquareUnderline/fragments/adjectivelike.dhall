@@ -1,3 +1,10 @@
+-- Protip
+-- To compress semi-duplicate words out, use
+-- /((\w+)"\n\s+, "\2ly")/$2++"/gm
+
+-- To reverse, use
+-- /(\w+)\+\+"/$1", "$1ly"/gm
+
 let set =
       [ "Abandon"
       , "Abandoned"
